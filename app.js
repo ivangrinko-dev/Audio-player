@@ -1,5 +1,5 @@
 const left = document.querySelector(`.left`);
-const run = document.querySelector(`.run`);
+const run = document.querySelector(`.play`);
 const right = document.querySelector(`.right`);
 const audio = document.querySelector(`audio`);
 const name = document.querySelector(`.name`);
