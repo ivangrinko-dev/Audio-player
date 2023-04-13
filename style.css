@@ -4,7 +4,7 @@
 }
 
 body {
-    padding-top:200px;
+    padding-top: 200px;
 
     width: 1000px;
     height: 1200px;
@@ -16,12 +16,12 @@ body {
     align-items: center;
     width: 1028px;
     height: 562px;
-    background: #0d0c0a;
+    background: #f3f1ec;
     margin: auto;
 }
 
 .wrapper {
-    
+
     display: flex;
     padding: 0px;
     width: 540px;
@@ -30,20 +30,13 @@ body {
     border-radius: 15px;
     margin: auto;
 }
-.zag {
-     display: flex;
-}
+
 .wrapper_2 {
-    display: flex;
-    width: 400px;
-    height: 169px;
-    padding-top: 10px;
+    
+margin-top: 10px;
+   
 }
 
-.title {
-    display: flex;
-    justify-content: space-around;
-}
 
 .ellipse {
     width: 169px;
@@ -51,6 +44,20 @@ body {
     background: url(./assets/img_1.svg);
     border-radius: 14.6957px 0px 0px 14px;
 }
+
+
+.title {
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.zag {
+    margin-right: 30px;
+}
+
 
 .player_name {
     width: 149px;
@@ -71,13 +78,13 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    margin-left: 50px;
 }
 
 .vector {
     Width: 21px;
-    height: 20.61px;
+    height: 21px;
     background: url(./assets/Vector.svg);
-    margin-left: 120px;
 }
 
 .progress {
@@ -105,13 +112,15 @@ body {
     color: #454545;
     margin-left: 7px;
 }
+
 .btn {
-      display: flex;
+    display: flex;
     justify-content: space-around;
     width: 340px;
     height: 20px;
     margin-top: 30px;
 }
+
 .reverse {
     width: 20px;
     height: 20px;
@@ -130,10 +139,10 @@ body {
     background: url(./assets/play.svg);
 }
 
-.rigth {
+.right {
     width: 18px;
     height: 12px;
-    background: url(./assets/rigth.svg);
+    background: url(./assets/right.svg);
 }
 
 .like {
