@@ -16,7 +16,7 @@ body {
     align-items: center;
     width: 1028px;
     height: 562px;
-    background: #f3f1ec;
+    background: #b0d8df;
     margin: auto;
 }
 
@@ -32,9 +32,10 @@ body {
 }
 
 .wrapper_2 {
-    
-margin-top: 10px;
-   
+    width: 350px;
+    height: 169px;
+    margin-top: 10px;
+
 }
 
 
@@ -42,7 +43,7 @@ margin-top: 10px;
     width: 169px;
     height: 169px;
     background: url(./assets/img_1.svg);
-    border-radius: 14.6957px 0px 0px 14px;
+    border-radius: 1px 0px 0px 14px;
 }
 
 
@@ -88,21 +89,26 @@ margin-top: 10px;
 }
 
 .progress {
-    background: url(./assets/progress.svg);
-    width: 257px;
+    /* background: url(./assets/progress.svg);*/
+    background-color: #d20d2e;
     height: 3px;
-    background: #DADADA;
-    margin-top: 7px;
+    width: 2px
 }
 
-.wrapper_3 {
-    width: 400px;
-    height: 20px;
+.wrapper_4 {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
-.time {
+.wrapper_3 {
+    width: 257px;
+    height: 3px;
+    margin-top: 25px;
+    background-color: #DADADA;
+}
+
+#time {
     width: 30px;
     height: 15px;
     font-family: 'Inter';
@@ -147,7 +153,7 @@ margin-top: 10px;
 
 .like {
     width: 20px;
-    height: 20px;
+    height: 18px;
     background: url(./assets/like.svg);
     margin-right: 25px;
 
