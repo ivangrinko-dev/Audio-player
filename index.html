@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>audio-player</title>
+</head>
+
+<body>
     <div class="fone">
-      <div class="wrapper">
-        <div class="img"></div>
-        <div class="title">
-          <div class="wrapper_1">
-            <div class="name_player">
-            <div class="player_name">Seasons Change</div>
-            <div class="artist">Quasimoto</div>
+        <div class="wrapper">
+            <div class="ellipse"></div>
+            <div class="wrapper_2">
+
+                <div class="title">
+                    <div class="zag">
+                        <div class="player_name">Seasons Change </div>
+                        <div class="artist">Quasimoto</div>
+                    </div>
+
+                    <div class="vector"></div>
+                </div>
+
+                <div class="wrapper_4">
+                    <audio src=""></audio>
+                    <div class="wrapper_3">
+                        <div class="progress"></div>
+                    </div>
+                    <div id="time">00:00</div>
+                </div>
+
+                <div class="btn">
+                    <div class="reverse"></div>
+                    <div class="left"></div>
+                    <div class="play"></div>
+                    <div class="right "></div>
+                    <div class="like"></div>
+                </div>
+
+
+            </div>
+            <audio src=""></audio>
+
+
         </div>
-            <div class="vector"></div>
-          </div>
-          <div class="wrapper_2">
-            <div class="progress"></div>
-            <div class="time">00:00</div>
-          </div>
-          <div class="btn">
-            <div class="icon"></div>
-          </div>
-        </div>
-      </div>
+
+    </div>
     </div>
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
