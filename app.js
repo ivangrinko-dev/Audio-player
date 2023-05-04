@@ -14,93 +14,89 @@ let flag = false;
 
 const PlayList = [
   {
-    nameSong: `r1`,
+    nameSong: `rington_1`,
     path: `./rington/rington_6.mp3`,
     artist: `artist_1`,
-    imgPath: `./img/img_1.jpg`
+    imgPath: `./img/img_1.jpg`,
   },
   {
-    nameSong: `r2`,
+    nameSong: `rington_2`,
     path: `./rington/rington_5.mp3`,
     artist: `artist_2`,
-    imgPath: `./img/img.jpg`
+    imgPath: `./img/img.jpg`,
   },
   {
-    nameSong: `r3`,
+    nameSong: `rington_3`,
     path: `./rington/rington_4.mp3`,
     artist: `artist_3`,
-    imgPath: `./img/images.jpg`
+    imgPath: `./img/images.jpg`,
   },
 ];
-let currentIndexSong = 0
-
+let currentIndexSong = 0;
 
 run.addEventListener(`click`, function () {
   audio.src = PlayList[currentIndexSong].path;
-  rington.innerHTML = PlayList[currentIndexSong].nameSong
-  artist.innerHTML = PlayList[currentIndexSong].artist
+  rington.innerHTML = PlayList[currentIndexSong].nameSong;
+  artist.innerHTML = PlayList[currentIndexSong].artist;
   img.style = `background-image: url(${PlayList[currentIndexSong].imgPath});
   width: 169px;
   height: 169px;
-  `
-  //audio.src = `./rington/rington_1.mp3`
+  `;
   if (flag == false) {
     audio.play();
     flag = true;
-    run.style = `background-image: url(./assets/stop.svg)`
+    run.style = `background-image: url(./assets/stop.svg)`;
   } else {
     audio.pause();
     flag = false;
-    run.style = `background-image: url(./assets/play.svg)`
+    run.style = `background-image: url(./assets/play.svg)`;
   }
 });
 
 left.addEventListener(`click`, function () {
-  if (currentIndexSong == 0) return
-  currentIndexSong--
+  if (currentIndexSong == 0) return;
+  currentIndexSong--;
   audio.src = PlayList[currentIndexSong].path;
-  rington.innerHTML = PlayList[currentIndexSong].nameSong
-  artist.innerHTML = PlayList[currentIndexSong].artist
+  rington.innerHTML = PlayList[currentIndexSong].nameSong;
+  artist.innerHTML = PlayList[currentIndexSong].artist;
   img.style = `background-image: url(${PlayList[currentIndexSong].imgPath});
   width: 169px;
   height: 169px;
-  `
-  audio.play()
+  `;
+  audio.play();
   flag = true;
-run.style = `background-image: url(./assets/stop.svg);`
-
+  run.style = `background-image: url(./assets/stop.svg);`;
 });
 
 right.addEventListener(`click`, function () {
-  if (currentIndexSong >= PlayList.length - 1) return
-  currentIndexSong++
+  if (currentIndexSong >= PlayList.length - 1) return;
+  currentIndexSong++;
   audio.src = PlayList[currentIndexSong].path;
-  rington.innerHTML = PlayList[currentIndexSong].nameSong
-  artist.innerHTML = PlayList[currentIndexSong].artist
+  rington.innerHTML = PlayList[currentIndexSong].nameSong;
+  artist.innerHTML = PlayList[currentIndexSong].artist;
   img.style = `background-image: url(${PlayList[currentIndexSong].imgPath});
   width: 169px;
   height: 169px;
-  `
-  run.style = `background-image: url(./assets/stop.svg);`
-  audio.play()
+  `;
+  run.style = `background-image: url(./assets/stop.svg);`;
+  audio.play();
 });
 
 let flag_1 = false;
 like.addEventListener(`click`, function () {
   if (flag_1 == false) {
-      like.style = `background-image: url(./assets/like.svg);`
-      flag_1 = true;
+    like.style = `background-image: url(./assets/like.svg);`;
+    flag_1 = true;
   } else {
-      like.style = `background-image: url(./assets/like_black.svg);`
-      flag_1 = false;
+    like.style = `background-image: url(./assets/like_black.svg);`;
+    flag_1 = false;
   }
-
 });
 
 function updateProgress(event) {
   const { duration, currentTime } = event.srcElement;
 }
-audio.addEventListener('timeupdate', updateProgress)
+audio.addEventListener("timeupdate", updateProgress);
 
 function updateProgress(event) {
   const { duration, currentTime } = event.srcElement;
@@ -115,8 +111,6 @@ function setProgress(event) {
   audio.currentTime = (clickX / width) * duration;
 }
 wrapper_3.addEventListener(`click`, setProgress);
-
-// aud.addEventListener(`ended`, rightSong);
 
 audio.addEventListener(`timeupdate`, (event) => {
   const durationTime = event.target.duration;
@@ -134,4 +128,3 @@ audio.addEventListener(`timeupdate`, (event) => {
 
   time.innerHTML = `${min}:${sec}`;
 });
-
